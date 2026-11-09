@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Index page</h1>
+    <hr>
+    <p th:text="${msg}"></p>
+    <a th:href="@{/list}">list페이지로 이동</a><br>
+    <a th:href="@{/one(id='aaa')}">이동</a><br>
+    <a th:href="@{/registForm}">등록페이지로</a>
+    <a th:href="@{/updateForm}">변경페이지로</a>
+
+
+</body>
+</html>
